@@ -1,17 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
 
-/*
-Route::get('/', function () {
+
+Route::get('/laravel', function () {
     return view('welcome');
 });
-*/
 
 
-Route::get('/', function () {
-    return view('site.index');
-});
+
+//Route::get('/', function () {return view('site.index');});
+
+Route::get('/', [IndexController::class, 'index']);
+
 
 
 
