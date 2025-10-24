@@ -2,17 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\BienController;
 
 
-Route::get('/laravel', function () {
-    return view('welcome');
-});
+Route::get('/laravel', function () {return view('welcome');});
 
-
-
-//Route::get('/', function () {return view('site.index');});
 
 Route::get('/', [IndexController::class, 'index']);
+
+Route::get('/bien/{id}', [BienController::class, 'show'])->name('bien.show');
 
 
 
