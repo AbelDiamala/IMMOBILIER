@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<!-- Zone de recherche -->
+<!-- Zone de recherche --> ok
 <div class="south-search-area">
             <div class="container">
             <div class="row">
