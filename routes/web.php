@@ -5,6 +5,7 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\BienController;
 
 
+
 Route::get('/laravel', function () {return view('welcome');});
 
 
@@ -26,3 +27,8 @@ Route::get('/maison.vente', function () {
 Route::get('/contact', function () {
     return view('site.contact');
 });
+
+
+
+
+
